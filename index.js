@@ -14,8 +14,8 @@ function increaseRankBy(n) {
     var li = lists[i].querySelectorAll('li');
     console.log(li);
     for (let i = 0; i < li.length; i++) {
-      if (li[i].innerText !== undefined)
-        li[i].innerText = parseInt(li[i].innerText)+n;
+      if (li[i].innerHTML !== undefined)
+        li[i].innerHTML = parseInt(li[i].innerHTML)+n;
     }
   }
     
