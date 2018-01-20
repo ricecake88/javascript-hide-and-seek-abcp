@@ -25,7 +25,7 @@ function deepestChild() {
   var grandnode = document.querySelector('div#grand-node');
   var children = grandnode.children()
   for (let i = grandnodeDIVS[0]; i < grandnodeDIVS.length; i++) {
-    
+    child = grandno
   }
   return child;
 }
