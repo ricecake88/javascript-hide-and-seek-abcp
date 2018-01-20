@@ -9,12 +9,14 @@ function nestedTarget() {
 }
 
 function increaseRankBy(n) {
-  var lists = document.querySelector('ul.ranked-list');
-  var li = lists.querySelectorAll('li');
-  console.log(li);
-  for (let i = 0; i < li.length; i++) {
-    if (li[i].innerText !== undefined)
-      li[i].innerText = parseInt(li[i].innerText)+n;
+  var lists = document.querySelectorAll('ul.ranked-list');
+  for (let i = 0; i < lists.length; i++) {
+    var li = lists[i].querySelectorAll('li');
+    console.log(li);
+    for (let i = 0; i < li.length; i++) {
+      if (li[i].innerText !== undefined)
+        li[i].innerText = parseInt(li[i].innerText)+n;
+    }
   }
     
 }
