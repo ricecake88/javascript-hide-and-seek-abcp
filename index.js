@@ -28,4 +28,5 @@ function deepestChild() {
     console.log(grandnode[i].querySelector('div'));
   }
   deepestChild = grandnode[i].querySelector('div');
+  return deepestChild;
 }
