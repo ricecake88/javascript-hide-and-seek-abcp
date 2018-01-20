@@ -14,7 +14,7 @@ function increaseRankBy(n) {
   console.log(li);
   for (let i = 0; i < li.length; i++) {
     if (li[i].innerText !== undefined)
-      console.log(parseInt(li[i].innerText)+n);
+      li[i].innerText = parseInt(li[i].innerText)+n);
   }
     
 }
