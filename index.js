@@ -13,8 +13,8 @@ function increaseRankBy(n) {
   var li = document.querySelectorAll('li');
   console.log(li);
   for (let i = 0; i < li.length; i++) {
-    if (li.innerText !== undefined)
-      console.log(li.innerText);
+    if (li[i].innerText !== undefined)
+      console.log(li[i].innerText);
   }
     
 }
