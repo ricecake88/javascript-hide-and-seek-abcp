@@ -27,7 +27,6 @@ function deepestChild() {
   var deepestChild;
   for (let i = 0; i < divs.length; i++) {
     deepestChild = divs[i];
-    console.log(deepestChild);
   }
   return deepestChild;
 }
